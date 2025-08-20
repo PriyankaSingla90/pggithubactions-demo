@@ -1,7 +1,9 @@
 name: Demo Workflow
 
-on: push
-  branches: [main]
+on: 
+  push:
+    paths:
+      - "app.txt"
 
 jobs:
   build:
